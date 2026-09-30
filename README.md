@@ -8,7 +8,7 @@
 
 A bare-metal Game Boy Advance emulator operating system for TCL L5 (5033TP) smartphones
 
-[Overview](#-overview) • [Latest Release](#-latest-release-v110) • [Features](#-features) • [Getting Started](#-getting-started) • [Releases](#-releases)
+[Overview](#-overview) • [Latest Release](#-latest-release) • [Features](#-features) • [Getting Started](#-getting-started) • [Releases](#-releases)
 
 </div>
 
