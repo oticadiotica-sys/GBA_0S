@@ -69,8 +69,7 @@ gba_os.elf          # Executable with debug symbols
 | `power.c` | Power management & shutdown | ✅ Done (v1.1+) |
 | `controles.c` | Button input handling | ✅ Done |
 | `armazenamento.c` | eMMC ROM/save management | ✅ Done |
-| `touch.c` | touch management 
-| ✅ Done 
+| `touch.c` | touch management | ✅ Done 
 ---
 
 ## 🔧 Configuration
