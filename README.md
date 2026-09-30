@@ -70,7 +70,8 @@ gba_os.elf          # Executable with debug symbols
 | `controles.c` | Button input handling | ✅ Done |
 | `armazenamento.c` | eMMC ROM/save management | ✅ Done |
 |
-| `touch.c` | touch management | ✅ Done 
+| `touch.c` | touch management 
+| ✅ Done 
 ---
 
 ## 🔧 Configuration
