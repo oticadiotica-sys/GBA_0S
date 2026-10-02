@@ -179,6 +179,8 @@ Copyright (c) 2026 oticadiotica-sys. All rights reserved. Any unauthorized modif
 
 ⭐ Star us on GitHub if you like this project!
 
+⭐Leave your feedback
+
 [📥 Download Latest Release](https://github.com/oticadiotica-sys/GBA_OS/releases)
 
 </div>
