@@ -163,6 +163,8 @@ Copyright (c) 2026 oticadiotica-sys. All rights reserved. Any unauthorized modif
 
 - **oticadiotica-sys** - Project Creator & Maintainer
 
+- **manasseslima-create** - Helper
+
 ---
 
 ## 🔗 Useful Links
