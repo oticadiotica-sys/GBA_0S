@@ -155,7 +155,7 @@ We welcome contributions! Fork the repository and submit a pull request with you
 
 ## 📄 License
 
-Copyright (c) 2026 oticadiotica-sys and manasseslima-create. All rights reserved. Any unauthorized modification or redistribution of this code is strictly prohibited.
+Copyright (c) 2026 oticadiotica-sys and manasseslima044-create. All rights reserved. Any unauthorized modification or redistribution of this code is strictly prohibited.
 
 ---
 
