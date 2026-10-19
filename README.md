@@ -157,7 +157,7 @@ We welcome contributions! Fork the repository and submit a pull request with you
 
 Copyright (c) 2026 oticadiotica-sys and manasseslima044-create. All rights reserved.
 
-This project is licensed under a strict Proprietaty Personal-Use License. 
+This project is licensed under a strict Proprietary Personal-Use License. 
 Any unauthorized public replication, creation of forks, modification, or redistribution of this code and its binaries is strictly prohibited. 
 
 You are only permitted to download and run this software on your personal hardware for educational and non-commercial emulation testing. For full terms, see the root [LICENSE](LICENSE) file.
