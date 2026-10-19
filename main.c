@@ -1,3 +1,5 @@
+/* Copyright (c) 2026 oticadiotica-sys. Todos os direitos reservados. Uso pessoal apenas. */
+
 /* =========================================================================
    GBA_OS - Sistema Operacional em Metal Puro para TCL L5 (5033TP)
    Módulo: main.c (Loop Principal e Sincronização do Sistema)
