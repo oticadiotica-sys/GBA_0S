@@ -97,7 +97,7 @@ power_configurar(&config);
 
 | Version | Date | Status | Changes |
 |---------|------|--------|---------|
-| [v1.4.0](https://github.com/oticadiotica-sys/GBA_OS/releases/tag/1.4.0) | 2026-07-22 | ✅ Stable | mode 1, mode 2, and mode 3 added |
+| [v1.4.0](https://github.com/oticadiotica-sys/GBA_OS/releases/tag/1.4.0) | 2026-10-21 | ✅ Stable | mode 1, mode 2, and mode 3 added |
 | [v1.3.0](https://github.com/oticadiotica-sys/GBA_OS/releases/tag/1.3.0) | 2026-08-18 | ✅ Stable | no changes |
 | [v1.2.0](https://github.com/oticadiotica-sys/GBA_OS/releases/tag/1.2.0) | 2026-07-31 | ✅ Stable | touchpad |
 | [v1.1.0](https://github.com/oticadiotica-sys/GBA_OS/releases/tag/1.1.0) | 2026-07-22 | ✅ Stable | Power Management System |
