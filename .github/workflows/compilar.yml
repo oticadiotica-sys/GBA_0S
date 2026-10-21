@@ -1,1 +1,37 @@
-v
+name: Compilar GBA_OS
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar código fonte
+        uses: actions/checkout@v4
+
+      - name: Instalar ferramentas ARM Bare-Metal
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential make gcc-arm-none-eabi binutils-arm-none-eabi
+
+      - name: Limpar build antigo
+        run: |
+          make clean || true
+          rm -f *.o *.elf *.bin
+
+      - name: Compilar o Sistema Operacional
+        run: make
+
+      - name: Guardar binário gerado
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: GBA_OS_Binario
+          path: |
+            ./*.bin
+            ./*.elf
