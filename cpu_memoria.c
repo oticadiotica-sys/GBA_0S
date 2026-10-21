@@ -1,4 +1,5 @@
 #include "cpu_memoria.h"
+#include "ppu.h"
 #include <stdint.h>
 
 // VRAM global compartilhada com a PPU
@@ -44,13 +45,18 @@ uint8_t gba_memoria_ler8(uint32_t endereco) {
 }
 
 uint16_t gba_memoria_ler16(uint32_t endereco) {
+    if (endereco >= 0x04000000 && endereco <= 0x04000006) {
+        return ppu_ler_registador(endereco);
+    }
+
     return (uint16_t)(gba_memoria_ler8(endereco) |
                       (gba_memoria_ler8(endereco + 1) << 8));
 }
 
 uint32_t gba_memoria_ler32(uint32_t endereco) {
-    return gba_memoria_ler16(endereco) |
-           ((uint32_t)gba_memoria_ler16(endereco + 2) << 16);
+    uint16_t low = gba_memoria_ler16(endereco);
+    uint16_t high = gba_memoria_ler16(endereco + 2);
+    return ((uint32_t)high << 16) | low;
 }
 
 void gba_memoria_escrever8(uint32_t endereco, uint8_t valor) {
@@ -86,6 +92,11 @@ void gba_memoria_escrever8(uint32_t endereco, uint8_t valor) {
 }
 
 void gba_memoria_escrever16(uint32_t endereco, uint16_t valor) {
+    if (endereco >= 0x04000000 && endereco <= 0x04000006) {
+        ppu_escrever_registador(endereco, valor);
+        return;
+    }
+
     gba_memoria_escrever8(endereco, valor & 0xFF);
     gba_memoria_escrever8(endereco + 1, (valor >> 8) & 0xFF);
 }
