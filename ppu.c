@@ -34,7 +34,6 @@ static void ppu_preencher_fundo(int linha_atual, uint8_t* buffer_tela_tcl,
 }
 
 static void ppu_renderizar_modo_0(int linha_atual, uint8_t* buffer_tela_tcl) {
-    // Modo 0: fundo azul/ciano
     ppu_preencher_fundo(linha_atual, buffer_tela_tcl,
                         20, 35, 90,
                         12, 12, 18,
@@ -42,7 +41,6 @@ static void ppu_renderizar_modo_0(int linha_atual, uint8_t* buffer_tela_tcl) {
 }
 
 static void ppu_renderizar_modo_1(int linha_atual, uint8_t* buffer_tela_tcl) {
-    // Modo 1: fundo verde
     ppu_preencher_fundo(linha_atual, buffer_tela_tcl,
                         25, 60, 20,
                         18, 14, 16,
@@ -50,7 +48,6 @@ static void ppu_renderizar_modo_1(int linha_atual, uint8_t* buffer_tela_tcl) {
 }
 
 static void ppu_renderizar_modo_2(int linha_atual, uint8_t* buffer_tela_tcl) {
-    // Modo 2: fundo magenta/roxo
     ppu_preencher_fundo(linha_atual, buffer_tela_tcl,
                         55, 20, 65,
                         16, 16, 18,
@@ -140,6 +137,5 @@ void ppu_renderizar_linha(int linha_atual, uint8_t* buffer_tela_tcl) {
             break;
     }
 
-    // Renderiza sprites por cima do fundo
     ppu_sprites_renderizar_linha(linha_atual, buffer_tela_tcl);
 }
