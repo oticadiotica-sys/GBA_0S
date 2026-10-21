@@ -1,8 +1,3 @@
-/* =========================================================================
-   GBA_OS - Sistema Operacional em Metal Puro para TCL L5 (5033TP)
-   Módulo: ppu.h (Controle da Unidade de Processamento Gráfico)
-   ========================================================================= */
-
 #ifndef PPU_H
 #define PPU_H
 
