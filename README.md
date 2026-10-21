@@ -63,7 +63,7 @@ gba_os.elf          # Executable with debug symbols
 | `cpu_arm.c` | ARM32 instruction execution | ✅ Done |
 | `cpu_thumb.c` | Thumb-16 instruction execution | ✅ Done |
 | `cpu_memoria.c` | Memory addressing and access | ✅ Done |
-| `ppu.c` | Graphics pipeline (Mode 3) | ✅ Done |
+| `ppu.c` | Graphics pipeline (Mode 3, 2, 1, 0) | ✅ Done |
 | `gba_timers.c` | 4 GBA hardware timers | ✅ Done |
 | `gba_sintetizador.c` | Audio FIFO synthesis | ✅ Done |
 | `power.c` | Power management & shutdown | ✅ Done (v1.1+) |
