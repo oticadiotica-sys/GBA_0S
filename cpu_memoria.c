@@ -1,12 +1,14 @@
 #include "cpu_memoria.h"
 #include <stdint.h>
 
+// VRAM global compartilhada com a PPU
+unsigned char vram_do_gba[0x18000];
+
 static uint8_t bios[0x4000];
 static uint8_t ewram[0x40000];
 static uint8_t iwram[0x8000];
 static uint8_t io_regs[0x400];
 static uint8_t palette_ram[0x400];
-static uint8_t vram[0x18000];
 static uint8_t oam[0x400];
 
 uint8_t gba_memoria_ler8(uint32_t endereco) {
@@ -31,7 +33,7 @@ uint8_t gba_memoria_ler8(uint32_t endereco) {
     }
 
     if (endereco >= 0x06000000 && endereco < 0x06018000) {
-        return vram[endereco - 0x06000000];
+        return vram_do_gba[endereco - 0x06000000];
     }
 
     if (endereco >= 0x07000000 && endereco < 0x07000400) {
@@ -73,7 +75,7 @@ void gba_memoria_escrever8(uint32_t endereco, uint8_t valor) {
     }
 
     if (endereco >= 0x06000000 && endereco < 0x06018000) {
-        vram[endereco - 0x06000000] = valor;
+        vram_do_gba[endereco - 0x06000000] = valor;
         return;
     }
 
