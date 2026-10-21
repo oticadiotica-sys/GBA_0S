@@ -137,6 +137,5 @@ void ppu_renderizar_linha(int linha_atual, uint8_t* buffer_tela_tcl) {
             break;
     }
 
-    // Renderiza sprites por cima do fundo
     ppu_sprites_renderizar_linha(linha_atual, buffer_tela_tcl);
 }
