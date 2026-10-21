@@ -21,7 +21,7 @@ SRCS = start.S \
        gba_timers.c \
        gba_sintetizador.c \
        power.c \
-       tcl
+       tcl_l5_stub.c
 
 OBJS = $(SRCS:.c=.o)
 OBJS := $(OBJS:.S=.o)
