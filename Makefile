@@ -20,7 +20,8 @@ SRCS = start.S \
        ppu_sprites.c \
        gba_timers.c \
        gba_sintetizador.c \
-       power.c
+       power.c \
+       tcl
 
 OBJS = $(SRCS:.c=.o)
 OBJS := $(OBJS:.S=.o)
